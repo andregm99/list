@@ -16,11 +16,11 @@ export default function Home(){
     }
 
     const editTodo=(id, editedText)=>{
-        var todosArray=[...todos]
+        var todosArray=[...todos] //estou criando uma cópia do meu array 'todos'
         
         for(var i in todosArray){
-            if (todosArray[i].id == id) {
-                todosArray[i].text =editedText
+            if (todosArray[i].id == id) {//se o "id" do meu 'vetor cópia' na posição x for igual ao id do meu vetor original.
+                todosArray[i].text =editedText //então o meu 'vetor cópia' irá receber o valor passado' 
             }
         }
     }
